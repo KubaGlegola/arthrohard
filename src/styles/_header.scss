@@ -1,0 +1,63 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  height: 84px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  &__brandName {
+    font-size: 30px;
+  }
+
+  &__burgerButton {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    &__container {
+      justify-content: space-between;
+    }
+
+    &__brandName {
+      font-size: 24px;
+    }
+
+    &__burgerButton {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+
+      span {
+        display: block;
+        height: 4px;
+        border-radius: 10px;
+        width: 34px;
+        background-color: #000000;
+        transition: transform 0.4s ease-in-out;
+      }
+
+      &--active {
+        span:nth-child(2) {
+          transform: scaleY(0);
+        }
+
+        span:first-child {
+          transform: translate(0, 9px) rotate(45deg);
+        }
+
+        span:last-child {
+          transform: translate(0, -9px) rotate(-45deg);
+        }
+      }
+    }
+  }
+}

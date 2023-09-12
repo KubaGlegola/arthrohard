@@ -1,0 +1,16 @@
+:root {
+  --max-width: 1400px;
+  --background-color: #f6f6f6;
+  --secondary-color: #30ab4c;
+  --secondary-color-dark: #1e6b30;
+  --accent-color: #ad4844;
+  --accent-color-dark: #783330;
+
+  @media (max-width: 1440px) {
+    --max-width: 1000px;
+  }
+
+  @media (max-width: 600px) {
+    --max-width: 360px;
+  }
+}

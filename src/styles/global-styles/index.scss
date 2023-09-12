@@ -1,0 +1,33 @@
+@import "scss-reset/reset";
+@import "./variables.scss";
+@import "./typography.scss";
+@import "./container";
+@import "./sectionTitle";
+@import "../header";
+@import "../brandName";
+@import "../nav";
+@import "../hero";
+@import "../button";
+@import "../whyUs";
+@import "../composition";
+@import "../paralax";
+@import "../products";
+@import "../mobileNav";
+@import "../modal";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Jost, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+b {
+  font-weight: 600;
+}

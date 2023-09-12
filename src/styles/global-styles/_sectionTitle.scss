@@ -1,0 +1,37 @@
+.sectionTitle {
+  &--gradient {
+    background: linear-gradient(
+      90.01deg,
+      #111111 -8.85%,
+      #b1b1b1 58.84%,
+      #696969 91.39%,
+      #b1b1b1 116.12%
+    );
+    background-clip: text;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+
+  font-size: 48px;
+  line-height: 1.3em;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 1px;
+    background-color: #111111;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 32px;
+  }
+}
